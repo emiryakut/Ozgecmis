@@ -1,0 +1,126 @@
+/* Temel Ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Navigasyon */
+nav {
+    background: #1f1f1f;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    text-align: center;
+    border-bottom: 2px solid #333;
+}
+
+nav a {
+    color: #00adb5;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+/* Hero Bölümü */
+header {
+    padding: 100px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #1f1f1f 0%, #121212 100%);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #00adb5;
+    margin-bottom: 10px;
+}
+
+/* Konteynır */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    border-left: 4px solid #00adb5;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Yetenekler */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.skill-card {
+    background: #1f1f1f;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+/* Projeler */
+.project-card {
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #00adb5;
+}
+
+.project-card h3 {
+    color: #00adb5;
+    margin-bottom: 10px;
+}
+
+/* Buton */
+.btn {
+    display: inline-block;
+    background: #00adb5;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-size: 0.8rem;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    nav a { margin: 0 5px; font-size: 0.8rem; }
+}
